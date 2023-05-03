@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}| Yacuana SAS </title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="{{url_for('static', filename = 'img/favicon-32x32.png')}}">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar fixed-top" data-bs-theme="dark" style="background-color: #ffffff;">
+    <div class="container-fluid">
+        <div id="logou"> 
+            <a href="{{url_for('Inicio')}}"> <img src="static/img/logo.jpg">  </a>
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <h5>
+        <ul class="navbar-nav ">
+          <li class="nav-item mx-2">
+            <a class="nav-link" aria-current="page" href="{{url_for('Inicio')}}"> Inicio </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" aria-current="page" href="{{url_for('Servicios')}}"> Servicios </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" aria-current="page" href="{{url_for('Nosotros')}}"> Nosotros </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" aria-current="page" href="{{url_for('Equipo')}}"> Equipo </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" aria-current="page" href="{{url_for('Contactanos')}}"> Contactanos </a>
+          </li>
+        </ul>
+      </h5>
+      </div>
+    </div>
+  </nav>
+
+<body>
+    <div class="container my-5" style="background-color: #ffffff;">
+    {% block body %}
+
+    {% endblock %}
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+
+<hr>
+<h5>
+<div class="container text-center my-4">
+  <div class="row align-items-start">
+    <div class="col">
+      Acerca de Yacuana
+      <h6>
+      <div class="container text-start my-4">
+      <ul>
+        <a href="#"> Quienes somos </a>
+      </ul>
+      <ul>
+        <a href="{{url_for('Mision')}}"> Mision </a>
+      </ul>
+      <ul>
+        <a href="{{url_for('Vision')}}"> Vision </a>
+      </ul>
+      <ul>
+        <a href="{{url_for('Valores')}}"> Nuestros valores </a>
+      </ul>
+    </div>
+    </h6>
+    </div>
+    <div class="col">
+      Noticias y Medios
+      <h6>
+        <div class="container text-start my-4">
+        <ul>
+          <a href="#"> Comunicaciones </a>
+        </ul>
+        <ul>
+          <a href="#"> Eventos </a>
+        </ul>
+        <ul>
+          <a href="#"> Calendario de eventos </a>
+        </ul>
+        <ul>
+          <a href="#"> Noticias - Blog </a>
+        </ul>
+      </div>
+      </h6>
+    </div>
+    <div class="col">
+      Enlaces de interes
+      <h6>
+        <div class="container text-start my-4">
+        <ul>
+          <a href="#"> Clientes </a>
+        </ul>
+        <ul>
+          <a href="#"> Trabaja con nosotros </a>
+        </ul>
+      </div>
+      </h6>
+    </div>
+    <div class="col">
+      Legal
+      <h6>
+        <div class="container text-start my-4">
+        <ul>
+          <a href="#"> Declaracion de privacidad </a>
+        </ul>
+        <ul>
+          <a href="#"> Declaracion de cookies </a> 
+        </ul>
+        <ul>
+          <a href="#"> Aviso legal </a>
+        </ul>
+        <ul>
+          <a href="#"> Politicas de privacidad </a>
+        </ul>
+      </div>
+      </h6>
+    </div>
+  </div>
+</div>
+</h5>
+<hr>
+<h6>
+<div class="container text-center ">
+  
+<ul>
+Sede: Puerto Lopez - Meta 
+</ul>
+<ul>
+  Calle 11 N° 14 - 06 - Barrio Bello Horizonte
+</ul>
+<ul>
+  Correo: Profesional_social@outlook.com
+</ul>
+<ul>
+Copyright © 2023 Yacuana Consultores SAS - Todos los derechos reservados.
+</ul>
+</div>
+</h6>
